@@ -25,10 +25,10 @@ function Nav() {
             </li>
        
             <li>
-              <Link className='navigation-link' to="conteudo">Conteudo</Link>
+              <Link className='navigation-link' to="conteudo">Cardapio</Link>
             </li>
             <li>
-              <Link className='navigation-link' to="pedido">Peça</Link>
+              <Link className='navigation-link' to="pedido">Pedido</Link>
             </li>
             <li>
               <Link className='navigation-link' to="/login">LOGIN</Link>

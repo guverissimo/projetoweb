@@ -1,9 +1,9 @@
 import {} from 'react'
-
+import '../css/Footer.css'
 
 function Ropade (){
   return(
-    <section >
+    <section className='rodape' >
     <h3>@2023-todos os direitos reservados</h3>
     </section>
   )

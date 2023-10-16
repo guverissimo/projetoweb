@@ -5,7 +5,7 @@ import combo30 from '../assets/combo-30.png'
 export const ListaProdutos =[
   {
     id: 1, nome: "SASHIMI SALMÃO TRUFADO", 
-    desc: "16 fatias de sashimi de salmão, azeite trufado, raspas de limão siciliano, e flor de saL", 
+    desc: "16 fatias de sashimi de salmão, azeite trufado, raspas de limão siciliano", 
     valor: 80, 
     img: sashimi},
   {
