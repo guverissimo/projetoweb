@@ -3,7 +3,6 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:'Playfair Display', serif;
 }
 
 .card-sushi{
@@ -11,6 +10,7 @@
     flex-direction:column;
     width:400px;
     margin: 2rem auto;
+    font-family:'Playfair Display', serif;
   }
   .card>div{
     box-shadow:0 15px 20px 0 rgba(0,0,0,0.5);

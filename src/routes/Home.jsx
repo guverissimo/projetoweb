@@ -4,7 +4,7 @@ import styles from '../routes/estilo.module.css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import Conteudo from './Conteudo';
-
+import '../css/Home.css'
 
 function Home (){
   const [slidePerView, setSlidePerView]=useState(2);
@@ -34,7 +34,7 @@ function Home (){
 
 
   return(
-    <section>
+    <section className='home-section'>
       <Swiper
       slidePerView={ slidePerView}
       pagination={{clickable:true}}
@@ -48,6 +48,7 @@ function Home (){
 
       </Swiper>
       
+      <h1 className='title-section'>Conheça nosso cardapio</h1>
       <Conteudo />
     
     </section>

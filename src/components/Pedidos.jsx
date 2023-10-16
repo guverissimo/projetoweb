@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom';
 import { ListaPedidos } from '../components/ListaPedidos';
 import { GrFormEdit as Editar } from 'react-icons/gr';
 import { RiDeleteBin2Fill as Excluir } from 'react-icons/ri';
+import '../css/Tabela.css'
 
 const Pedidos = () => {
     
     return(
-        <section>
-      <h1>LISTA DE PRODUTOS</h1>
+      <section className='lista-section'>
+      <h1>LISTA DE PEDIDOS</h1>
       <div>
         <table>
           <thead>
