@@ -11,7 +11,6 @@ function Nav() {
     sessionStorage.removeItem('senhaData');
     alert("SAINDO DA SESSÃO");
     navigate('/');
-
   }
 
   return (

@@ -2,6 +2,8 @@ import { useRef } from 'react';
 import Produtos from './Produtos';
 import Inserir from './Inserir';
 import Pedidos from '../components/Pedidos';
+import { Link } from 'react-router-dom';
+import NavLogin from '../components/NavLogin';
 
 function Login() {
   const user = useRef();
@@ -25,6 +27,7 @@ function Login() {
     <section>
       {getUser && getSenha ? (
         <>
+          <NavLogin />
           <Produtos />
           <Inserir />
           <Pedidos />
