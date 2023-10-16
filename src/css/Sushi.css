@@ -5,11 +5,14 @@
   box-sizing:border-box;
 }
 
+.container-sushi{
+  background-color: #101010;
+}
 .card-sushi{
     display:flex;
     flex-direction:column;
-    width:400px;
-    margin: 2rem auto;
+    width: 400px;
+    margin: 0 auto;
     font-family:'Playfair Display', serif;
   }
   .card>div{

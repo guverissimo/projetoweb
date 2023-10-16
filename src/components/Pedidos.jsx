@@ -4,11 +4,13 @@ import { ListaPedidos } from '../components/ListaPedidos';
 import { GrFormEdit as Editar } from 'react-icons/gr';
 import { RiDeleteBin2Fill as Excluir } from 'react-icons/ri';
 import '../css/Tabela.css'
+import NavLogin from './NavLogin';
 
 const Pedidos = () => {
     
     return(
       <section className='lista-section'>
+        <NavLogin />
       <h1>LISTA DE PEDIDOS</h1>
       <div>
         <table>

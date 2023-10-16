@@ -33,7 +33,7 @@ const Pedido = () => {
       <section className="pedido-container">
         <img src={japan} alt="" />
         <form onSubmit={handleSubmit}>
-          <h1>FAÇA SEU PEDIDO ONLINE</h1>
+          <h1 className="title-pedido">FAÇA SEU PEDIDO ONLINE</h1>
           <p className='box'>
             <label htmlFor="idNome"> Seu nome:</label>
             <input
@@ -42,6 +42,7 @@ const Pedido = () => {
               id="idNome"
               value={produto.nome}
               onChange={handleChange}
+              placeholder="Nome Completo"
             />
           </p>
           <p className='box'>
@@ -52,6 +53,7 @@ const Pedido = () => {
               id="idEndereco"
               value={produto.desc}
               onChange={handleChange}
+              placeholder="Endereo completo"
             />
           </p>
           <p className='box'>
@@ -62,6 +64,7 @@ const Pedido = () => {
               id="idCel"
               value={produto.valor}
               onChange={handleChange}
+              placeholder="(11) 9xxxx-xxxx"
             />
           </p>
           <p className='box'>

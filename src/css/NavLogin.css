@@ -1,6 +1,6 @@
 .nav-login-div {
     display: flex;
-    background-color: #161616;
+    background-color: #101010;
     justify-content: center;
     align-items: center;
     gap: 5rem;
@@ -19,5 +19,5 @@
 
 .nav-login:hover {
     background-color: aqua;
-    color: #161616;
+    color: #101010;
 }

@@ -1,22 +1,20 @@
-import { useState } from 'react';
-import { ListaProdutos } from '../components/ListaProdutos';
-import { useNavigate } from 'react-router-dom';
-
+import { useState } from "react";
+import { ListaProdutos } from "../components/ListaProdutos";
+import { useNavigate } from "react-router-dom";
+import NavLogin from "../components/NavLogin";
+import '../css/Inserir.css'
 
 function Inserir() {
-
   const navigate = useNavigate();
-
 
   let novoId = ListaProdutos[ListaProdutos.length - 1].id + 1;
 
-
   const [produto, setProduto] = useState({
     id: novoId,
-    nome: '',
-    desc: '',
-    valor: '',
-    img: '',
+    nome: "",
+    desc: "",
+    valor: "",
+    img: "",
   });
 
   /*funções */
@@ -24,7 +22,7 @@ function Inserir() {
   const handleSubmit = (e) => {
     e.preventDefault();
     ListaProdutos.push(produto);
-    navigate('/produtos');
+    navigate("/produtos");
   };
 
   const handleChange = (e) => {
@@ -34,63 +32,64 @@ function Inserir() {
   };
 
   return (
-    <section>
-      <h1>Cadastro de Produtos</h1>
-      <form onSubmit={handleSubmit}>
-        <fieldset>
-          <legend>PRODUTO</legend>
-          <p>
-            <label htmlFor="idNome"> Nome do Produto:</label>
-            <input
-              type="text"
-              name="nome"
-              id="idNome"
-           
-              value={produto.nome}
-              onChange={handleChange}
-            />
-          </p>
-          <p>
-            <label htmlFor="idDesc">Descrição Produto:</label>
-            <input
-              type="text"
-              name="desc"
-              id="idDesc"
-              
-              value={produto.desc}
-              onChange={handleChange}
-            />
-          </p>
-          <p>
-            <label htmlFor="idValor"> Valor do Produto:</label>
-            <input
-              type="text"
-              name="valor"
-              id="idValor"
-              
-              value={produto.valor}
-              onChange={handleChange}
-            />
-          </p>
-          <p>
-            <label htmlFor="idImg"> Imagem do Produto:</label>
-            <input
-              type="text"
-              name="img"
-              id="idImg"
-              
-              value={produto.img}
-              onChange={handleChange}
-            />
-          </p>
-          <p>
-            <button type="submit">
-              CADASTRAR
-            </button>
-          </p>
-        </fieldset>
-      </form>
-    </section>
+    <>
+      <NavLogin />
+      <section>
+        <h1>Cadastro de Produtos</h1>
+        <form onSubmit={handleSubmit}>
+          <fieldset>
+            <legend>PRODUTO</legend>
+            <p>
+              <label htmlFor="idNome"> Nome do Produto:</label>
+              <input
+                type="text"
+                name="nome"
+                id="idNome"
+                value={produto.nome}
+                onChange={handleChange}
+                className="input_field" required
+              />
+            </p>
+            <p>
+              <label htmlFor="idDesc">Descrição Produto:</label>
+              <input
+                type="text"
+                name="desc"
+                id="idDesc"
+                value={produto.desc}
+                onChange={handleChange}
+                className="input_field" required
+              />
+            </p>
+            <p>
+              <label htmlFor="idValor"> Valor do Produto:</label>
+              <input
+                type="text"
+                name="valor"
+                id="idValor"
+                value={produto.valor}
+                onChange={handleChange}
+                className="input_field" required
+              />
+            </p>
+            <p>
+              <label htmlFor="idImg"> Imagem do Produto:</label>
+              <input
+                type="text"
+                name="img"
+                id="idImg"
+                value={produto.img}
+                onChange={handleChange}
+                className="input_field" required
+              />
+            </p>
+            <p>
+              <button type="submit">CADASTRAR</button>
+            </p>
+          </fieldset>
+        </form>
+      </section>
+    </>
   );
 }
 export default Inserir;
