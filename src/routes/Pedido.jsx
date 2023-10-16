@@ -10,7 +10,7 @@ const Pedido = () => {
 
   let novoId = ListaPedidos[ListaPedidos.length - 1].id + 1;
 
-  const [produto, setProduto] = useState({
+  const [pedido, setPedido] = useState({
     id: novoId,
     nome: "",
     endereco: "",
@@ -20,14 +20,14 @@ const Pedido = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    ListaPedidos.push(produto);
+    ListaPedidos.push(pedido);
     navigate("/");
   };
 
   const handleChange = (e) => {
     e.preventDefault();
     const { name, value } = e.target;
-    setProduto({ ...produto, [name]: value });
+    setPedido({ ...pedido, [name]: value });
   };
   return (
     <>
@@ -41,7 +41,7 @@ const Pedido = () => {
               type="text"
               name="nome"
               id="idNome"
-              value={produto.nome}
+              value={pedido.nome}
               onChange={handleChange}
               placeholder="Nome Completo"
             />
@@ -52,7 +52,7 @@ const Pedido = () => {
               type="text"
               name="endereco"
               id="idEndereco"
-              value={produto.desc}
+              value={pedido.desc}
               onChange={handleChange}
               placeholder="Endereo completo"
             />
@@ -63,7 +63,7 @@ const Pedido = () => {
               type="text"
               name="cel"
               id="idCel"
-              value={produto.valor}
+              value={pedido.valor}
               onChange={handleChange}
               placeholder="(11) 9xxxx-xxxx"
             />
@@ -74,7 +74,7 @@ const Pedido = () => {
               type="text"
               name="pedido"
               id="idPedido"
-              value={produto.img}
+              value={pedido.img}
               onChange={handleChange}
             />
           </p>
