@@ -3,6 +3,7 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import styles from '../routes/estilo.module.css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import Conteudo from './Conteudo';
 
 
 function Home (){
@@ -10,9 +11,9 @@ function Home (){
 
   const imagens =[
 
-    {id:'1', image: './src/assets/img1.jpg'},
+    {id:'1', image: './src/assets/img1.png'},
     {id:'2', image: './src/assets/img2.jpg'},
-    {id:'3', image: './src/assets/img3.jpg'},
+    {id:'3', image: './src/assets/img3.png'},
   ];
   
   useEffect(()=>{
@@ -46,7 +47,8 @@ function Home (){
         )}
 
       </Swiper>
-
+      
+      <Conteudo />
     
     </section>
   )

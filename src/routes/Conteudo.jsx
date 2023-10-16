@@ -11,14 +11,12 @@ function Conteudo() {
           {ListaProdutos.map((item) => (
             <>
               <div className="card-sushi">
+                <h4 className="card-name">{item.nome}</h4>
                 <div className="card_img">
                   <img src={item.img} alt="" />
-                </div>
-                <div className="card_info">
-                  <h4>{item.nome}</h4>
-                  <h4>{item.desc}</h4>
-                  <h4>R$ {item.valor}</h4>
-                </div>
+                </div>   
+                  <h5>{item.desc}</h5>
+                  <h3>R$ {item.valor}</h3>
               </div>
             </>
           ))}
