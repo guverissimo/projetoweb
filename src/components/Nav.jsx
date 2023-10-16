@@ -31,9 +31,6 @@ function Nav() {
               <Link className='navigation-link' to="pedido">Peça</Link>
             </li>
             <li>
-              <Link className='navigation-link' to="/cadastrar/produto">Cadastrar Produto</Link>
-            </li>
-            <li>
               <Link className='navigation-link' to="/login">LOGIN</Link>
             </li>
             <button onClick={handleLogout}>Logout</button>

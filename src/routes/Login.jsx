@@ -1,5 +1,7 @@
 import { useRef } from 'react';
 import Produtos from './Produtos';
+import Inserir from './Inserir';
+import Pedidos from '../components/Pedidos';
 
 function Login() {
   const user = useRef();
@@ -23,7 +25,11 @@ function Login() {
     <section>
       <h1>Login</h1>
       {getUser && getSenha ? (
-        <Produtos />
+        <>
+          <Produtos />
+          <Inserir />
+          <Pedidos />
+        </>
       ) : (
         <form onSubmit={handleSubmit}>
           <p>
