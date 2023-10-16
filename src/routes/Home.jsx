@@ -5,15 +5,18 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import Conteudo from './Conteudo';
 import '../css/Home.css'
+import img1 from '../assets/img1.png'
+import img2 from '../assets/img2.jpg'
+import img3 from '../assets/img3.png'
 
 function Home (){
   const [slidePerView, setSlidePerView]=useState(2);
 
   const imagens =[
 
-    {id:'1', image: './src/assets/img1.png'},
-    {id:'2', image: './src/assets/img2.jpg'},
-    {id:'3', image: './src/assets/img3.png'},
+    {id:'1', image: img1},
+    {id:'2', image: img2},
+    {id:'3', image: img3},
   ];
   
   useEffect(()=>{

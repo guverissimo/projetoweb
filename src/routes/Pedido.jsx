@@ -3,6 +3,7 @@ import { ListaPedidos } from "../components/ListaPedidos";
 import { useNavigate } from "react-router-dom";
 import japan from "../assets/japan.png";
 import "../css/Pedido.css";
+import { ListaProdutos } from "../components/ListaProdutos";
 
 const Pedido = () => {
   const navigate = useNavigate();
@@ -77,6 +78,14 @@ const Pedido = () => {
               onChange={handleChange}
             />
           </p>
+            {ListaProdutos.map((item) => {
+              <section>
+                <option value="">Selecione</option>
+                <option value=''>{item.nome}</option>
+                <option value={item.valor}>{item.valor}</option>
+              </section>
+                
+            })}
         <button className="btn" type="submit">FAZER PEDIDO</button>
         </form>
       </section>
