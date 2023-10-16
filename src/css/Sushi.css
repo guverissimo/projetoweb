@@ -1,0 +1,32 @@
+.card-sushi {
+    margin: 2rem auto;
+    width: 400px;
+    height: 400px;
+    background-color: #101010;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_img {
+    width: 100%;
+    height: 300px;
+    background-color: #414141;
+}
+
+.card_img > img {
+    width: 100%;
+    height: 100%;
+}
+
+.card_info {
+    width: 100%;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
