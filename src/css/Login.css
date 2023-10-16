@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  background: #101010;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.box-login {
+  background: #101010;
+  width: 300px;
+  height: 300px;
+  border-radius: 6px;
+  padding: 0px 0px 70px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-login {
+  color: white;
+}
+
+.email {
+  background: #ecf0f1;
+  border: #ccc 1px solid;
+  border-bottom: #ccc 2px solid;
+  padding: 8px;
+  width: 250px;
+  color: #aaaaaa;
+  margin-top: 10px;
+  font-size: 1em;
+  border-radius: 4px;
+}
+
+.password {
+  border-radius: 4px;
+  background: #ecf0f1;
+  border: #ccc 1px solid;
+  padding: 8px;
+  width: 250px;
+  font-size: 1em;
+}
+
+.validateLoginBtn {
+    background-color: transparent;
+    margin-top: 1.2rem;
+    padding: 0.5rem 4rem;
+    border: 2px solid aqua;
+    color: white;
+    border-radius: 10px;
+}
+.validateLoginBtn:hover {
+    background-color: aqua;
+    color: black;
+    transition: 0.3s;
+}

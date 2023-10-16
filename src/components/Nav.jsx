@@ -30,9 +30,8 @@ function Nav() {
               <Link className='navigation-link' to="pedido">Pedido</Link>
             </li>
             <li>
-              <Link className='navigation-link' to="/login">LOGIN</Link>
+              <Link className='navigation-link loginBtn' to="/login">Login</Link>
             </li>
-            <button onClick={handleLogout}>Logout</button>
           </ul>
         </nav>
       </header>

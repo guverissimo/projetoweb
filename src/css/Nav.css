@@ -23,11 +23,16 @@
     font-size: 18px;
 }
 
-.navigation button {
+.loginBtn {
     padding: 0.5rem 1rem;
-    font-size: 16px;
+    font-size: 14px;
     background-color: transparent;
-    color: red;
-    border: 1px solid red;
+    color: greenyellow;
+    border: 1px solid greenyellow;
     border-radius: 10px;
+}
+
+.loginBtn:hover {
+    background-color: greenyellow;
+    color: black;
 }

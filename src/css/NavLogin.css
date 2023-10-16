@@ -20,4 +20,20 @@
 .nav-login:hover {
     background-color: aqua;
     color: #101010;
+    transition: 0.4s;
+}
+
+.LogoutBtn {
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    background-color: transparent;
+    color: red;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.LogoutBtn:hover {
+    background-color: red;
+    color: black;
+    transition: 0.4s;
 }
