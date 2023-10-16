@@ -23,7 +23,7 @@ const Pedido = () => {
     const handleSubmit = (e) => {
       e.preventDefault();
       ListaPedidos.push(produto);
-      navigate('/produtos');
+      navigate('/');
     };
   
     const handleChange = (e) => {
@@ -34,7 +34,7 @@ const Pedido = () => {
     return(
         <>
              <section>
-      <h1>Cadastro de Produtos</h1>
+      <h1>FAÇA SEU PEDIDO ONLINE</h1>
       <form onSubmit={handleSubmit}>
         <fieldset>
           <legend>PRODUTO</legend>
@@ -84,7 +84,7 @@ const Pedido = () => {
           </p>
           <p>
             <button type="submit">
-              CADASTRAR
+              FAZER PEDIDO
             </button>
           </p>
         </fieldset>
