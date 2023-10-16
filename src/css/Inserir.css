@@ -1,0 +1,44 @@
+.section-inserir {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #101010;
+    color: white;
+}
+
+.section-inserir form {
+    width: 400px;
+    height: 400px;
+}
+
+.section-inserir p {
+    display: flex;
+    flex-direction: column;
+    margin: 8px ;
+}
+
+.section-inserir p input {
+    background-color: #101010;
+    color: white;
+    border: none;
+    border-bottom: 1px solid aqua ;
+    padding: 4px;
+    margin: 4px;
+}
+
+.section-inserir p button {
+    padding: 8px;
+    margin-top: 12px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid aqua 
+}
+
+.section-inserir p button:hover{
+    background-color: aqua;
+    color: black;
+    transition: 0.4s;
+}
+
