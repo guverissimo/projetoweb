@@ -35,7 +35,7 @@ const Pedido = () => {
         <img src={japan} alt="" />
         <form onSubmit={handleSubmit}>
           <h1 className="title-pedido">FAÇA SEU PEDIDO ONLINE</h1>
-          <p className='box'>
+          <p className="box">
             <label htmlFor="idNome"> Seu nome:</label>
             <input
               type="text"
@@ -46,7 +46,7 @@ const Pedido = () => {
               placeholder="Nome Completo"
             />
           </p>
-          <p className='box'>
+          <p className="box">
             <label htmlFor="idEndereco">Endereco para entrega: </label>
             <input
               type="text"
@@ -57,7 +57,7 @@ const Pedido = () => {
               placeholder="Endereo completo"
             />
           </p>
-          <p className='box'>
+          <p className="box">
             <label htmlFor="idCel"> Telefone para contato: </label>
             <input
               type="text"
@@ -68,25 +68,19 @@ const Pedido = () => {
               placeholder="(11) 9xxxx-xxxx"
             />
           </p>
-          <p className='box'>
+          <p className="box">
             <label htmlFor="idPedido"> Seu Pedido </label>
             <input
               type="text"
               name="pedido"
               id="idPedido"
-              value={pedido.img}
+              value={pedido.pedido}
               onChange={handleChange}
             />
           </p>
-            {ListaProdutos.map((item) => {
-              <section>
-                <option value="">Selecione</option>
-                <option value=''>{item.nome}</option>
-                <option value={item.valor}>{item.valor}</option>
-              </section>
-                
-            })}
-        <button className="btn" type="submit">FAZER PEDIDO</button>
+          <button className="btn" type="submit">
+            FAZER PEDIDO
+          </button>
         </form>
       </section>
     </>

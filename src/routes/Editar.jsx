@@ -1,7 +1,8 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import { ListaProdutos } from '../components/ListaProdutos';
 import { useState } from 'react';
-
+import NavLogin from '../components/NavLogin';
+import "../css/Inserir.css";
 function Editar() {
 
   const { id } = useParams();
@@ -38,59 +39,65 @@ function Editar() {
   };
 
   return (
-    <section >
-      <h1 >EDITAR PRODUTOS</h1>
-      <form onSubmit={handleSubmit}>
-        <fieldset>
-          <legend>PRODUTO SELECIONADO</legend>
-          <div>
-            <input
-              type="hidden"
-              name="id"
-              value={produto.id}
-
-              onChange={handleChange}
-            />
-          </div>
-          <div>
-            <label htmlFor="idNome">Nome do Produto:</label>
+    <>
+    <NavLogin />
+    <section className="section-inserir">
+        <h1>Editar</h1>
+        <form onSubmit={handleSubmit}>
+          <p>
+            <label htmlFor="idNome"> Nome do Produto:</label>
             <input
               type="text"
               name="nome"
               id="idNome"
               value={produto.nome}
-              
               onChange={handleChange}
+              required
             />
-          </div>
-          <div>
-            <label htmlFor="idDesc">Descrição do Produto:</label>
+          </p>
+          <p>
+            <label htmlFor="idDesc">Descrição Produto:</label>
             <input
               type="text"
               name="desc"
               id="idDesc"
               value={produto.desc}
-                 
               onChange={handleChange}
+              className="input_field"
+              required
             />
-          </div>
-          <div>
-            <label htmlFor="idValor">Valor do Produto:</label>
+          </p>
+          <p>
+            <label htmlFor="idValor"> Valor do Produto:</label>
             <input
               type="text"
               name="valor"
               id="idValor"
               value={produto.valor}
-                
               onChange={handleChange}
+              className="input_field"
+              required
             />
-          </div>
-          <div>
+          </p>
+          <p>
+            <label htmlFor="idImg"> Imagem do Produto:</label>
+            <input
+              type="text"
+              name="img"
+              id="idImg"
+              value={produto.img}
+              onChange={handleChange}
+              className="input_field"
+              placeholder="URL"
+              required
+            />
+          </p>
+          <p>
             <button type="subtmit" >EDITAR</button>
-          </div>
-        </fieldset>
-      </form>
-    </section>
+          </p>
+        </form>
+      </section>
+    </>
   );
 }
 export default Editar;
